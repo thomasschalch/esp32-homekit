@@ -1,5 +1,8 @@
 #include <os.h>
 #include <esp_log.h>
+#ifdef WOLFSSL_USER_SETTINGS
+#include "user_settings.h"
+#endif
 #include <wolfssl/wolfcrypt/srp.h>
 #include <wolfssl/wolfcrypt/sha512.h>
 
